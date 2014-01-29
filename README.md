@@ -1,5 +1,5 @@
-RAML Syntax Highlighter
-=======================
+RAML Syntax Highlighter for Sublime
+===================================
 
 This is a simple syntax highlighter for the RESTful API Modeling Language (http://raml.org/). It was designed for Sublime Text 2, but should work for Sublime Text 3.
 
