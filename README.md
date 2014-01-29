@@ -17,4 +17,4 @@ For Windows users, that's likely located in `%appdata%\Sublime Text 2`.
 
 Alternatively, you can find it by going to Preferences > Browse Packages, and then going up one folder.
 
-You could also install by copying the fileS into a `Sublime Text 2\Packages\RAML` folder (making the `RAML` folder).
+You could also install by copying the files into a `Sublime Text 2\Packages\RAML` folder (making the `RAML` folder).
