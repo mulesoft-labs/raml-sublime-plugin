@@ -34,7 +34,7 @@ Manual installation:
 
 
 After installing the plugin, you will be able to use it by going to View -> Syntax -> RAML.
-Once selected, you will see the RAML label on the bottom right of the screen.
+Once selected, you will see the RAML label on the bottom right corner.
 
 ##Example
 
