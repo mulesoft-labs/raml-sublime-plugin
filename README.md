@@ -9,16 +9,35 @@ RESTful API Modeling Language (RAML) is a simple and succinct way of describing 
 
 With this package, Sublime Text will recognize `raml` files as having RAML syntax.
 
-##Installation
+##Installation:
 
-The easiest way to install is to just copy the `sublime-package` file (bundled with the [releases](https://github.com/restful-api-modeling-lang/raml-sumblime-plugin/releases)) to the `Installed Packages` folder of your personal Sublime Text folder.
 
-For Windows users, that's likely located in `%appdata%\Sublime Text 2`.
+Using Package Control:
+---------------------
+ If you don't have Package Control installed in Sublime, please follow [this instructions](https://sublime.wbond.net/installation).
 
-Alternatively, you can find it by going to Preferences > Browse Packages, and then going up one folder.
+ - Go to your package control palette, by pressing ctrl+shift+p (Win,
+    Linux) or cmd+shift+p (OS X). 
+    
+ - Type "Package Control: Install Package"
+    
+ - Type "RAML Syntax Highlighter" in the search toolbar and press Enter. The plugin will be downloaded and installed automatically
 
-You could also install by copying the files into a `Sublime Text 2\Packages\RAML` folder (making the `RAML` folder).
+Manual installation:
+-------------------
+
+ - The easiest way to install is just copying the `sublime-package` file (bundled with the [releases](https://github.com/restful-api-modeling-lang/raml-sumblime-plugin/releases)) to the Installed Packages folder of your personal Sublime Text folder.
+          
+ - For Windows users, that's likely located in `%appdata%\Sublime Text 2`.
+
+ - You could also install it by copying the files into a `Sublime Text 2\Packages\RAML` folder (creating the RAML folder previously).
+
+
+After installing the plugin, you will be able to use it by going to View -> Syntax -> RAML.
+Once selected, you will see the RAML label on the bottom right of the screen.
 
 ##Example
 
 ![](https://raw.github.com/restful-api-modeling-lang/raml-sumblime-plugin/master/demo.png)
+
+Package Control link: https://sublime.wbond.net/packages/RAML%20Syntax%20Highlighter
