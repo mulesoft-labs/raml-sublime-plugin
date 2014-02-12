@@ -217,7 +217,7 @@
                                 <key>1</key>
                                 <dict>
                                         <key>name</key>
-                                        <string>markup.underline.link.yaml</string>
+                                        <string>entity.name.tag.yaml</string>
                                 </dict>
                                 <key>2</key>
                                 <dict>
