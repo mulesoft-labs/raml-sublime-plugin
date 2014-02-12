@@ -211,23 +211,56 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*(\/[^:]+)(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <string>^[ \t]*((\/)|(\/[^:]+))(:)\s(?:(\![\w\!]+)\s+)?</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
                                 <dict>
                                         <key>name</key>
-                                        <string>markup.underline.link.yaml</string>
+                                        <string>entity.name.tag.yaml</string>
                                 </dict>
                                 <key>2</key>
                                 <dict>
                                         <key>name</key>
-                                        <string>punctuation.colon.key-value.yaml</string>
+                                        <string>entity.name.tag.yaml</string>
                                 </dict>
                                 <key>3</key>
                                 <dict>
                                         <key>name</key>
-                                        <string>support.type.tag.yaml</string>
+                                        <string>entity.name.tag.yaml</string>
+                                </dict>
+                        </dict>
+                        <key>end</key>
+                        <string>$</string>
+                        <key>name</key>
+                        <string>meta.resource</string>
+                        <key>patterns</key>
+                        <array>
+                                <dict>
+                                        <key>include</key>
+                                        <string>#scalars</string>
+                                </dict>
+                        </array>
+                </dict>
+                <dict>
+                        <key>begin</key>
+                        <string>^[ \t]*((\d)+)(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <key>beginCaptures</key>
+                        <dict>
+                                <key>1</key>
+                                <dict>
+                                        <key>name</key>
+                                        <string>support.type.function.yaml</string>
+                                </dict>
+                                <key>2</key>
+                                <dict>
+                                        <key>name</key>
+                                        <string>support.type.function.yaml</string>
+                                </dict>
+                                <key>3</key>
+                                <dict>
+                                        <key>name</key>
+                                        <string>support.type.function.yaml</string>
                                 </dict>
                         </dict>
                         <key>end</key>
