@@ -4,6 +4,7 @@
 <dict>
         <key>fileTypes</key>
         <array>
+
                 <string>raml</string>
         </array>
         <key>keyEquivalent</key>
@@ -178,13 +179,13 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*(baseUri)(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <string>^[ \t]*(baseUri)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
                                 <dict>
                                         <key>name</key>
-                                        <string>entity.name.function.yaml</string>
+                                        <string>constant.character.method.yaml</string>
                                 </dict>
                                 <key>2</key>
                                 <dict>
@@ -211,7 +212,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*((\/)|(\/[^:]+))(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <string>^[ \t]*((\/)|(\/[^:]+))(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -244,7 +245,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*((\d)+)(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <string>^[ \t]*((\d)+)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -277,7 +278,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*(get|post|put|patch|head|delete|options)(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <string>^[ \t]*(get|post|put|patch|head|delete|options)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -310,7 +311,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*((?!\/)[^:]+)(:)\s(?:(\![\w\!]+)\s+)?</string>
+                        <string>^[ \t]*((?!\/)[^:]+)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
