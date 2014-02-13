@@ -38,6 +38,6 @@ Once selected, you will see the RAML label on the bottom right corner.
 
 ##Example
 
-![](https://raw.github.com/mulesoft/raml-sumblime-plugin/master/demo.png)
+![](https://raw2.github.com/mulesoft/raml-sublime-plugin/master/demo.png)
 
 Package Control link: https://sublime.wbond.net/packages/RAML%20Syntax%20Highlighter
