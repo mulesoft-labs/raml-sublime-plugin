@@ -26,7 +26,7 @@ Using Package Control:
 Manual installation:
 -------------------
 
- - The easiest way to install is just copying the `sublime-package` file (bundled with the [releases](https://github.com/restful-api-modeling-lang/raml-sumblime-plugin/releases)) to the Installed Packages folder of your personal Sublime Text folder.
+ - The easiest way to install is just copying the `sublime-package` file (bundled with the [releases](https://github.com/mulesoft/raml-sumblime-plugin/releases)) to the Installed Packages folder of your personal Sublime Text folder.
           
  - For Windows users, that's likely located in `%appdata%\Sublime Text 2`.
 
@@ -38,6 +38,6 @@ Once selected, you will see the RAML label on the bottom right corner.
 
 ##Example
 
-![](https://raw.github.com/restful-api-modeling-lang/raml-sumblime-plugin/master/demo.png)
+![](https://raw.github.com/mulesoft/raml-sumblime-plugin/master/demo.png)
 
 Package Control link: https://sublime.wbond.net/packages/RAML%20Syntax%20Highlighter
