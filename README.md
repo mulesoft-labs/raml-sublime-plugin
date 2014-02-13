@@ -26,7 +26,7 @@ Using Package Control:
 Manual installation:
 -------------------
 
- - The easiest way to install is just copying the `sublime-package` file (bundled with the [releases](https://github.com/mulesoft/raml-sumblime-plugin/releases)) to the Installed Packages folder of your personal Sublime Text folder.
+ - The easiest way to install is just copying the `sublime-package` file (bundled with the [releases](https://github.com/mulesoft/raml-sublime-plugin/releases)) to the Installed Packages folder of your personal Sublime Text folder.
           
  - For Windows users, that's likely located in `%appdata%\Sublime Text 2`.
 
