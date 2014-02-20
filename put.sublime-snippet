@@ -1,0 +1,17 @@
+<snippet>
+	<description>put Snippet</description>
+    <content><![CDATA[put:
+	summary: |
+		Update an existing resource
+	body:
+		application/json:
+	responses:
+		204:
+			description: |
+				Succesfully updated the resource
+${1:}
+]]>
+    </content>
+    <tabTrigger>put</tabTrigger>
+    <scope>source.raml</scope>
+</snippet>

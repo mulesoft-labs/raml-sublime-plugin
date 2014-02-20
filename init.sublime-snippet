@@ -1,0 +1,14 @@
+<snippet>
+	<description>RAML Snippet</description>
+    <content><![CDATA[RAML
+
+---
+title: title
+version: version
+baseUri: https://baseUri/version/
+${1:}
+]]>
+    </content>
+    <tabTrigger>RAML</tabTrigger>
+    <scope>source.raml</scope>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<description>patch Snippet</description>
+    <content><![CDATA[patch:
+summary: |
+		Create a new resource
+	body:
+		application/json:
+	responses:
+		204:
+			description: Succesfully updated resource
+${1:}
+]]>
+    </content>
+    <tabTrigger>patch</tabTrigger>
+    <scope>source.raml</scope>
+</snippet>

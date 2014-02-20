@@ -1,0 +1,23 @@
+<snippet>
+	<description>post Snippet</description>
+    <content><![CDATA[post:
+	summary: |
+		Create a new resource
+	body:
+		application/json:
+	responses:
+		201:
+			description: |
+				Succesfully created a new resource
+			headers:
+				Location:
+					desription: |
+						Location of the newly created resource
+					type: string
+					required: no
+${1:}
+]]>
+    </content>
+    <tabTrigger>post</tabTrigger>
+    <scope>source.raml</scope>
+</snippet>
