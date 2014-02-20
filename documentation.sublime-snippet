@@ -1,0 +1,12 @@
+<snippet>
+	<description>documentation Snippet</description>
+    <content><![CDATA[documentation:
+	-	title: title
+		content: |
+			content
+${1:}
+]]>
+    </content>
+    <tabTrigger>documentation</tabTrigger>
+    <scope>source.raml</scope>
+</snippet>

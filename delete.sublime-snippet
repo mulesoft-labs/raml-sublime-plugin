@@ -1,0 +1,15 @@
+<snippet>
+	<description>delete Snippet</description>
+    <content><![CDATA[delete:
+	summary: |
+		Retrieve resource
+	responses:
+		204:
+			description: |
+				Succesfully deleted resource
+${1:}
+		]]>
+    </content>
+    <tabTrigger>delete</tabTrigger>
+    <scope>source.raml</scope>
+</snippet>
