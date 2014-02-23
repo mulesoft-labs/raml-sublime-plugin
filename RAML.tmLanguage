@@ -13,7 +13,7 @@
         <string>RAML</string>
         <key>patterns</key>
         <array>
-                <dict>
+               <dict>
                         <key>begin</key>
                         <string>(^[ \t]+)?(?=#)</string>
                         <key>beginCaptures</key>
@@ -40,10 +40,10 @@
                                                 </dict>
                                         </dict>
                                         <key>end</key>
-                                        <string>\n</string>
+                                        <string>\Z|\n</string>
                                         <key>name</key>
                                         <string>comment.line.number-sign.yaml</string>
-                                </dict>
+                               </dict>
                         </array>
                 </dict>
                 <dict>
@@ -134,6 +134,22 @@
                         <key>patterns</key>
                         <array>
                                 <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
+                                <dict>
                                         <key>include</key>
                                         <string>#markdown</string>
                                 </dict>
@@ -172,6 +188,22 @@
                         <key>patterns</key>
                         <array>
                                 <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
+                                <dict>
                                         <key>include</key>
                                         <string>#markdown</string>
                                 </dict>
@@ -179,7 +211,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*(baseUri)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
+                        <string>^[ \t]*(baseUri)(:)(\s(?:(\![\w\!]+)\s+#?)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -204,6 +236,22 @@
                         <string>meta.key-value</string>
                         <key>patterns</key>
                         <array>
+                            <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
                                 <dict>
                                         <key>include</key>
                                         <string>#uri</string>
@@ -212,7 +260,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*((\/)|(\/[^:]+))(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
+                        <string>^[ \t]*((\/)|(\/[^:]+))(:)(\s(?:(\![\w\!]+)\s+#?)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -237,6 +285,22 @@
                         <string>meta.resource</string>
                         <key>patterns</key>
                         <array>
+                            <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
                                 <dict>
                                         <key>include</key>
                                         <string>#scalars</string>
@@ -245,7 +309,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*((\d)+)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
+                        <string>^[ \t]*((\d)+)(:)(\s(?:(\![\w\!]+)\s+#?)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -270,6 +334,22 @@
                         <string>meta.resource</string>
                         <key>patterns</key>
                         <array>
+                            <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
                                 <dict>
                                         <key>include</key>
                                         <string>#scalars</string>
@@ -278,7 +358,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*(get|post|put|patch|head|delete|options)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
+                        <string>^[ \t]*(get|post|put|patch|head|delete|options)(:)(\s(?:(\![\w\!]+)\s+#?)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -304,6 +384,22 @@
                         <key>patterns</key>
                         <array>
                                 <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
+                                <dict>
                                         <key>include</key>
                                         <string>#scalars</string>
                                 </dict>
@@ -311,7 +407,7 @@
                 </dict>
                 <dict>
                         <key>begin</key>
-                        <string>^[ \t]*((?!\/)[^:]+)(:)(\s(?:(\![\w\!]+)\s+)?|\Z)</string>
+                        <string>^[ \t]*((?!\/)[^:]+)(:)(\s(?:(\![\w\!]+)\s+#?)?|\Z)</string>
                         <key>beginCaptures</key>
                         <dict>
                                 <key>1</key>
@@ -336,6 +432,22 @@
                         <string>meta.key-value</string>
                         <key>patterns</key>
                         <array>
+                            <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
                                 <dict>
                                         <key>include</key>
                                         <string>#scalars</string>
@@ -349,6 +461,22 @@
                 <dict>
                         <key>patterns</key>
                         <array>
+                            <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
                                 <dict>
                                         <key>include</key>
                                         <string>#ampersand</string>
@@ -756,6 +884,22 @@
                                         <string>markup.italic.markdown</string>
                                         <key>patterns</key>
                                         <array>
+                                            <dict>
+                                                    <key>begin</key>
+                                                    <string>#</string>
+                                                    <key>beginCaptures</key>
+                                                    <dict>
+                                                            <key>0</key>
+                                                            <dict>
+                                                                    <key>name</key>
+                                                                    <string>punctuation.definition.comment.yaml</string>
+                                                            </dict>
+                                                    </dict>
+                                                    <key>end</key>
+                                                    <string>\Z|\n</string>
+                                                    <key>name</key>
+                                                    <string>comment.line.number-sign.yaml</string>
+                                           </dict>
                                                 <dict>
                                                         <key>applyEndPatternLast</key>
                                                         <integer>1</integer>
@@ -1072,6 +1216,22 @@
                 <dict>
                         <key>patterns</key>
                         <array>
+                                <dict>
+                                        <key>begin</key>
+                                        <string>#</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>0</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.definition.comment.yaml</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>\Z|\n</string>
+                                        <key>name</key>
+                                        <string>comment.line.number-sign.yaml</string>
+                               </dict>
                                 <dict>
                                         <key>include</key>
                                         <string>#boolean</string>
