@@ -1,7 +1,7 @@
 <snippet>
 	<description>put Snippet</description>
     <content><![CDATA[put:
-	summary: |
+	description: |
 		Update an existing resource
 	body:
 		application/json:

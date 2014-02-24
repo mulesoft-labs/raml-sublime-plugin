@@ -1,12 +1,12 @@
 <snippet>
 	<description>get Snippet</description>
     <content><![CDATA[get:
-summary: |
-	Retrieve resource
-responses:
-	200:
-		description: |
-			Succesfully retrieved resource
+	description: |
+		Retrieve resource
+	responses:
+		200:
+			description: |
+				Succesfully retrieved resource
 ${1:}
 ]]>
     </content>

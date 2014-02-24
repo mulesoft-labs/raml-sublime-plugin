@@ -1,10 +1,10 @@
 <snippet>
 	<description>post Snippet</description>
     <content><![CDATA[post:
-	summary: |
+	description: |
 		Create a new resource
 	body:
-		application/json:
+		application/json: !!null
 	responses:
 		201:
 			description: |

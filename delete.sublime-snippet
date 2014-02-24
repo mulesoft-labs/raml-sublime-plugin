@@ -1,7 +1,7 @@
 <snippet>
 	<description>delete Snippet</description>
     <content><![CDATA[delete:
-	summary: |
+	description: |
 		Retrieve resource
 	responses:
 		204:
