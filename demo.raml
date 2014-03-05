@@ -19,38 +19,7 @@ documentation:
         example: Barcelona
     responses:
       200:
-        body:
-        get:
-          description: |
-            Retrieve resource
-          responses:
-            200:
-              description: |
-                Succesfully retrieved resource
-        post:
-          description: |
-            Create a new resource
-          body:
-            application/json: !!null
-          responses:
-            201:
-              description: |
-                Succesfully created a new resource
-              headers:
-                Location:
-                  desription: |
-                    Location of the newly created resource
-                  type: string
-                  required: no
-        patch:
-          description: |
-            Create a new resource
-          body:
-            application/json: !!null
-          responses:
-            204:
-              description: Succesfully updated resource
-        
+        body:        
           application/json:
             schema: |
               {
