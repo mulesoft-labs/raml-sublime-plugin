@@ -1,6 +1,6 @@
 <snippet>
 	<description>RAML Snippet</description>
-    <content><![CDATA[#%RAML 0.8
+	<content><![CDATA[#%RAML 0.8
 
 title: title
 baseUri: http://baseUri/{version}
@@ -8,7 +8,7 @@ version: version
 
 ${1:}
 ]]>
-    </content>
-    <tabTrigger>RAML</tabTrigger>
-    <scope>source.raml</scope>
+	</content>
+	<tabTrigger>RAML</tabTrigger>
+	<scope>source.raml</scope>
 </snippet>

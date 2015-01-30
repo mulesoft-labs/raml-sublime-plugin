@@ -1,6 +1,6 @@
 <snippet>
 	<description>delete Snippet</description>
-    <content><![CDATA[delete:
+	<content><![CDATA[delete:
 	description: |
 		Retrieve resource
 	responses:
@@ -9,7 +9,7 @@
 				Successfully deleted resource
 ${1:}
 ]]>
-    </content>
-    <tabTrigger>delete</tabTrigger>
-    <scope>source.raml</scope>
+	</content>
+	<tabTrigger>delete</tabTrigger>
+	<scope>source.raml</scope>
 </snippet>
