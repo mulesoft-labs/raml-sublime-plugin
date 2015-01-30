@@ -2,13 +2,13 @@
 	<description>patch Snippet</description>
 	<content><![CDATA[patch:
 	description: |
-		Create a new resource
+		Patch an existing resource
 	body:
 		application/json: !!null
 	responses:
 		204:
 			description: |
-				Successfully updated the resource
+				Successfully patched the resource
 ${1:}
 ]]>
 	</content>

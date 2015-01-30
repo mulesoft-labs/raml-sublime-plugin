@@ -2,11 +2,11 @@
 	<description>delete Snippet</description>
 	<content><![CDATA[delete:
 	description: |
-		Retrieve resource
+		Delete resource(s)
 	responses:
 		204:
 			description: |
-				Successfully deleted resource
+				Successfully deleted resource(s)
 ${1:}
 ]]>
 	</content>
