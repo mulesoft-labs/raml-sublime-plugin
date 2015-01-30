@@ -6,7 +6,7 @@
 	responses:
 		200:
 			description: |
-				Succesfully retrieved resource
+				Successfully retrieved resource
 ${1:}
 ]]>
     </content>

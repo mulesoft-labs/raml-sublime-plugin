@@ -8,7 +8,7 @@
 	responses:
 		204:
 			description: |
-				Succesfully updated the resource
+				Successfully updated the resource
 ${1:}
 ]]>
     </content>

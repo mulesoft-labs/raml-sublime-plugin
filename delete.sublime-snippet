@@ -6,9 +6,9 @@
 	responses:
 		204:
 			description: |
-				Succesfully deleted resource
+				Successfully deleted resource
 ${1:}
-		]]>
+]]>
     </content>
     <tabTrigger>delete</tabTrigger>
     <scope>source.raml</scope>
