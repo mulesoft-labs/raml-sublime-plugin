@@ -15,6 +15,25 @@
         <key>patterns</key>
         <array>
             <dict>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>constant.language.directive.yaml</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>constant.language.version.yaml</string>
+                    </dict>
+                </dict>
+                <key>match</key>
+                <string>^(#%[RY]AML\s+(\d+\.\d+))$</string>
+                <key>name</key>
+                <string>constant.other.directive.yaml</string>
+            </dict>
+            <dict>
                 <key>begin</key>
                 <string>(^[ \t]+)?(?=#)</string>
                 <key>beginCaptures</key>
@@ -58,25 +77,6 @@
                 <string>^\.\.\.\s*$</string>
                 <key>name</key>
                 <string>constant.language.document.yaml</string>
-            </dict>
-            <dict>
-                <key>captures</key>
-                <dict>
-                    <key>1</key>
-                    <dict>
-                        <key>name</key>
-                        <string>constant.language.directive.yaml</string>
-                    </dict>
-                    <key>2</key>
-                    <dict>
-                        <key>name</key>
-                        <string>constant.language.version.yaml</string>
-                    </dict>
-                </dict>
-                <key>match</key>
-                <string>^(%YAML\s+(\d+\.\d+))$</string>
-                <key>name</key>
-                <string>constant.other.directive.yaml</string>
             </dict>
             <dict>
                 <key>captures</key>
