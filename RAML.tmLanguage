@@ -551,8 +551,8 @@
                             (\*\*|__)(?=\S)                                             # Open
                             (?=
                                 (
-                                    &lt;[^&gt;]*+&gt;                                   # HTML tags
-                                  | (?&lt;raw&gt;`+)([^`]|(?!(?&lt;!`)\k&lt;raw&gt;(?!`))`)*+\k&lt;raw&gt;
+                                    &lt;[^&gt;]*&gt;                                    # HTML tags
+                                  | (?&lt;raw&gt;`+)([^`]|(?!(?&lt;!`)\k&lt;raw&gt;(?!`))`)*\k&lt;raw&gt;
                                                                                         # Raw
                                   | \\[\\`*_{}\[\]()#.!+\-&gt;]?+                       # Escapes
                                   | \[
@@ -560,19 +560,19 @@
                                             (?&lt;square&gt;                            # Named group
                                                 [^\[\]\\]                               # Match most chars
                                               | \\.                                     # Escaped chars
-                                              | \[ \g&lt;square&gt;*+ \]                # Nested brackets
-                                            )*+
+                                              | \[ \g&lt;square&gt;* \]                 # Nested brackets
+                                            )*
                                             \]
                                             (
                                                 (                                       # Reference Link
                                                     [ ]?                                # Optional space
-                                                    \[[^\]]*+\]                         # Ref name
+                                                    \[[^\]]*\]                          # Ref name
                                                 )
                                               | (                                       # Inline Link
                                                     \(                                  # Opening paren
-                                                        [ \t]*+                         # Optional whtiespace
+                                                        [ \t]*                          # Optional whtiespace
                                                         &lt;?(.*?)&gt;?                 # URL
-                                                        [ \t]*+                         # Optional whtiespace
+                                                        [ \t]*                          # Optional whtiespace
                                                         (                               # Optional Title
                                                             (?&lt;title&gt;['&quot;])
                                                             (.*?)
@@ -584,7 +584,7 @@
                                         )
                                   | (?!(?&lt;=\S)\1).                                   # Everything besides
                                                                                         # style closer
-                                )++
+                                )+
                                 (?&lt;=\S)\1                                            # Close
                             )
                         </string>
@@ -768,7 +768,7 @@
                         <key>match</key>
                         <string>(?x:
                                 \!                                  # Images start with !
-                                (\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])
+                                (\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*\])*)(\])
                                                                     # Match the link text.
                                 ([ ])?                              # Space not allowed
                                 (\()                                # Opening paren for url
@@ -820,7 +820,7 @@
                             </dict>
                         </dict>
                         <key>match</key>
-                        <string>\!(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)(.*?)(\])</string>
+                        <string>\!(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*\])*)(\])[ ]?(\[)(.*?)(\])</string>
                         <key>name</key>
                         <string>meta.image.reference.markdown</string>
                     </dict>
@@ -831,8 +831,8 @@
                             (\*|_)(?=\S)                                            # Open
                             (?=
                                 (
-                                    &lt;[^&gt;]*+&gt;                               # HTML tags
-                                  | (?&lt;raw&gt;`+)([^`]|(?!(?&lt;!`)\k&lt;raw&gt;(?!`))`)*+\k&lt;raw&gt;
+                                    &lt;[^&gt;]*&gt;                                # HTML tags
+                                  | (?&lt;raw&gt;`+)([^`]|(?!(?&lt;!`)\k&lt;raw&gt;(?!`))`)*\k&lt;raw&gt;
                                                                                     # Raw
                                   | \\[\\`*_{}\[\]()#.!+\-&gt;]?+                   # Escapes
                                   | \[
@@ -840,19 +840,19 @@
                                         (?&lt;square&gt;                            # Named group
                                            [^\[\]\\]                                # Match most chars
                                           | \\.                                     # Escaped chars
-                                          | \[ \g&lt;square&gt;*+ \]                # Nested brackets
-                                        )*+
+                                          | \[ \g&lt;square&gt;* \]                 # Nested brackets
+                                        )*
                                         \]
                                         (
                                             (                                       # Reference Link
                                                 [ ]?                                # Optional space
-                                                \[[^\]]*+\]                         # Ref name
+                                                \[[^\]]*\]                          # Ref name
                                             )
                                           | (                                       # Inline Link
                                                 \(                                  # Opening paren
-                                                    [ \t]*+                         # Optional whtiespace
+                                                    [ \t]*                          # Optional whtiespace
                                                     &lt;?(.*?)&gt;?                 # URL
-                                                    [ \t]*+                         # Optional whtiespace
+                                                    [ \t]*                          # Optional whtiespace
                                                     (                               # Optional Title
                                                         (?&lt;title&gt;['&quot;])
                                                         (.*?)
@@ -865,7 +865,7 @@
                                   | \1\1                                            # Must be bold closer
                                   | (?!(?&lt;=\S)\1).                               # Everything besides
                                                                                     # style closer
-                                )++
+                                )+
                                 (?&lt;=\S)\1                                        # Close
                             )
                         </string>
@@ -1096,7 +1096,7 @@
                         </dict>
                         <key>match</key>
                         <string>(?x:
-                                (\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])
+                                (\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*\])*)(\])
                                                                    # Match the link text.
                                 ([ ])?                             # Space not allowed
                                 (\()                               # Opening paren for url
@@ -1148,7 +1148,7 @@
                             </dict>
                         </dict>
                         <key>match</key>
-                        <string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)([^\]]*+)(\])</string>
+                        <string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*\])*)(\])[ ]?(\[)([^\]]*)(\])</string>
                         <key>name</key>
                         <string>meta.link.reference.markdown</string>
                     </dict>
@@ -1183,7 +1183,7 @@
                             </dict>
                         </dict>
                         <key>match</key>
-                        <string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)(\])</string>
+                        <string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*\])*)(\])[ ]?(\[)(\])</string>
                         <key>name</key>
                         <string>meta.link.reference.literal.markdown</string>
                     </dict>
@@ -1205,7 +1205,7 @@
                             </dict>
                         </dict>
                         <key>match</key>
-                        <string>(`+)([^`]|(?!(?&lt;!`)\1(?!`))`)*+(\1)</string>
+                        <string>(`+)([^`]|(?!(?&lt;!`)\1(?!`))`)*(\1)</string>
                         <key>name</key>
                         <string>markup.raw.inline.markdown</string>
                     </dict>
