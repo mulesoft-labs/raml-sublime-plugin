@@ -158,6 +158,37 @@
             </dict>
             <dict>
                 <key>begin</key>
+                <string>^(\s*)(?:(-)|(?:(-\s*)?(schema\s*(:))))\s*(\||&gt;)</string>
+                <key>beginCaptures</key>
+                <dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>punctuation.definition.entry.yaml</string>
+                    </dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>punctuation.definition.entry.yaml</string>
+                    </dict>
+                    <key>4</key>
+                    <dict>
+                        <key>name</key>
+                        <string>entity.name.function.yaml</string>
+                    </dict>
+                    <key>5</key>
+                    <dict>
+                        <key>name</key>
+                        <string>punctuation.separator.key-value.yaml</string>
+                    </dict>
+                </dict>
+                <key>end</key>
+                <string>^(?!^\1)|^(?=\1(-|\w+\s*:)|#)</string>
+                <key>name</key>
+                <string>markup.raw.description.raml.schema</string>
+            </dict>
+            <dict>
+                <key>begin</key>
                 <string>^(\s*)(?:(-)|(?:(-\s*)?(content\s*(:))))\s*(\||&gt;)</string>
                 <key>beginCaptures</key>
                 <dict>
