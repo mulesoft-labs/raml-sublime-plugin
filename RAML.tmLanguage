@@ -218,7 +218,7 @@
                     <key>1</key>
                     <dict>
                         <key>name</key>
-                        <string>constant.character.method.yaml</string>
+                        <string>entity.name.function.yaml</string>
                     </dict>
                     <key>2</key>
                     <dict>
