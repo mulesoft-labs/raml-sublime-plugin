@@ -302,7 +302,7 @@
             </dict>
             <dict>
                 <key>begin</key>
-                <string>^[ \t]*(baseUri)(:)((?:(\![\w\!]+)\s+?)?|\Z|(?#))</string>
+                <string>^[ \t]*(baseUri|authorizationUri|accessTokenUri|requestTokenUri|tokenCredentialsUri)(:)((?:(\![\w\!]+)\s+?)?|\Z|(?#))</string>
                 <key>beginCaptures</key>
                 <dict>
                     <key>1</key>
