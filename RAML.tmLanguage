@@ -543,6 +543,10 @@
                         <key>include</key>
                         <string>#scalars</string>
                     </dict>
+                    <dict>
+                        <key>include</key>
+                        <string>#includes</string>
+                    </dict>
                 </array>
             </dict>
         </array>
@@ -1462,6 +1466,23 @@
                 <string>(.*?)(?=$)</string>
                 <key>name</key>
                 <string>meta.link.inline.markdown</string>
+            </dict>
+            <key>includes</key>
+            <dict>
+                <key>begin</key>
+                <string>!include </string>
+                <key>beginCaptures</key>
+                <dict>
+                    <key>0</key>
+                    <dict>
+                        <key>name</key>
+                        <string>meta.key-value.include.path</string>
+                    </dict>
+                </dict>
+                <key>end</key>
+                <string>\Z|\n|\s</string>
+                <key>name</key>
+                <string>meta.key-value.include</string>
             </dict>
         </dict>
         <key>scopeName</key>
