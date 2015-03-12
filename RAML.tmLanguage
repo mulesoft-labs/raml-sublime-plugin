@@ -189,6 +189,65 @@
             </dict>
             <dict>
                 <key>begin</key>
+                <string>^[ \t]*(pattern)(:)((?#))</string>
+                <key>beginCaptures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>entity.name.function.yaml</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>punctuation.colon.key-value.yaml</string>
+                    </dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>support.type.tag.yaml</string>
+                    </dict>
+                </dict>
+                <key>end</key>
+                <string>$</string>
+                <key>name</key>
+                <string>meta.key-value</string>
+                <key>patterns</key>
+                <array>
+                    <dict>
+                        <key>begin</key>
+                        <string>#</string>
+                        <key>beginCaptures</key>
+                        <dict>
+                            <key>0</key>
+                            <dict>
+                                <key>name</key>
+                                <string>punctuation.definition.comment.yaml</string>
+                            </dict>
+                        </dict>
+                        <key>end</key>
+                        <string>\Z|\n</string>
+                        <key>name</key>
+                        <string>comment.line.number-sign.yaml</string>
+                    </dict>
+                    <dict>
+                        <key>captures</key>
+                        <dict>
+                            <key>1</key>
+                            <dict>
+                                <key>name</key>
+                                <string>variable</string>
+                            </dict>
+                        </dict>
+                        <key>match</key>
+                        <string>(.*?)(?=$)</string>
+                        <key>name</key>
+                        <string>variable</string>
+                    </dict>
+                </array>
+            </dict>
+            <dict>
+                <key>begin</key>
                 <string>^(\s*)(?:(-)|(?:(-\s*)?(content\s*(:))))\s*(\||&gt;)</string>
                 <key>beginCaptures</key>
                 <dict>
