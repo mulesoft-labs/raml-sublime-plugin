@@ -395,7 +395,7 @@
             </dict>
             <dict>
                 <key>begin</key>
-                <string>^[ \t]*(get|post|put|patch|head|delete|options)(:)((?:(\![\w\!]+)\s+?)?|\Z|(?#))</string>
+                <string>^[ \t]*((?:get|post|put|patch|head|delete|options)\??)(:)((?:(\![\w\!]+)\s+?)?|\Z|(?#))</string>
                 <key>beginCaptures</key>
                 <dict>
                     <key>1</key>
