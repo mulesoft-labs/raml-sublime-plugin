@@ -547,6 +547,10 @@
                         <key>include</key>
                         <string>#includes</string>
                     </dict>
+                    <dict>
+                        <key>include</key>
+                        <string>#resourceParameter</string>
+                    </dict>
                 </array>
             </dict>
         </array>
@@ -1483,6 +1487,23 @@
                 <string>\Z|\n|\s</string>
                 <key>name</key>
                 <string>meta.key-value.include</string>
+            </dict>
+            <key>resourceParameter</key>
+            <dict>
+                <key>begin</key>
+                <string>&lt;&lt;</string>
+                <key>beginCaptures</key>
+                <dict>
+                    <key>0</key>
+                    <dict>
+                        <key>name</key>
+                        <string>variable</string>
+                    </dict>
+                </dict>
+                <key>end</key>
+                <string>&gt;&gt;</string>
+                <key>name</key>
+                <string>variable</string>
             </dict>
         </dict>
         <key>scopeName</key>
