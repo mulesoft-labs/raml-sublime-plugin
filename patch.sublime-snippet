@@ -1,16 +1,17 @@
 <snippet>
 	<description>patch Snippet</description>
-    <content><![CDATA[patch:
+	<content><![CDATA[patch:
 	description: |
-		Create a new resource
+		Patch an existing resource
 	body:
 		application/json: !!null
 	responses:
 		204:
-			description: Succesfully updated resource
+			description: |
+				Successfully patched the resource
 ${1:}
 ]]>
-    </content>
-    <tabTrigger>patch</tabTrigger>
-    <scope>source.raml</scope>
+	</content>
+	<tabTrigger>patch</tabTrigger>
+	<scope>source.raml</scope>
 </snippet>

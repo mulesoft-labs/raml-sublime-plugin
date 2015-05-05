@@ -1,15 +1,15 @@
 <snippet>
 	<description>get Snippet</description>
-    <content><![CDATA[get:
+	<content><![CDATA[get:
 	description: |
-		Retrieve resource
+		Retrieve resource(s)
 	responses:
 		200:
 			description: |
-				Succesfully retrieved resource
+				Successfully retrieved resource(s)
 ${1:}
 ]]>
-    </content>
-    <tabTrigger>get</tabTrigger>
-    <scope>source.raml</scope>
+	</content>
+	<tabTrigger>get</tabTrigger>
+	<scope>source.raml</scope>
 </snippet>

@@ -1,6 +1,6 @@
 <snippet>
 	<description>post Snippet</description>
-    <content><![CDATA[post:
+	<content><![CDATA[post:
 	description: |
 		Create a new resource
 	body:
@@ -8,16 +8,16 @@
 	responses:
 		201:
 			description: |
-				Succesfully created a new resource
+				Successfully created a new resource
 			headers:
 				Location:
-					desription: |
+					description: |
 						Location of the newly created resource
 					type: string
-					required: no
+					required: false
 ${1:}
 ]]>
-    </content>
-    <tabTrigger>post</tabTrigger>
-    <scope>source.raml</scope>
+	</content>
+	<tabTrigger>post</tabTrigger>
+	<scope>source.raml</scope>
 </snippet>
