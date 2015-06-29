@@ -185,7 +185,7 @@
                 <key>end</key>
                 <string>^(?!\1|\s*$)|^(?=\1(-|\w+\s*:)|#)</string>
                 <key>name</key>
-                <string>markup.raw.description.raml.schema</string>
+                <string>string.quoted.single.yaml</string>
             </dict>
             <dict>
                 <key>begin</key>
