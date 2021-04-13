@@ -1,8 +1,9 @@
 <snippet>
 	<description>post Snippet</description>
-	<content><![CDATA[post:
+	<content><![CDATA[
+post:
 	description: |
-		Create a new resource
+	Create a new resource
 	body:
 		application/json: !!null
 	responses:
@@ -14,8 +15,7 @@
 					description: |
 						Location of the newly created resource
 					type: string
-					required: false
-${1:}
+					required: false${1:}
 ]]>
 	</content>
 	<tabTrigger>post</tabTrigger>
